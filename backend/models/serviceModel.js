@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 const serviceSchema = new mongoose.Schema(
 	{
 		name: { type: String, required: true },
-
 		slug: { type: String, required: true },
 
 		bannerHeading: { type: String, required: true },
@@ -23,6 +22,8 @@ const serviceSchema = new mongoose.Schema(
 		whatSubHeading: { type: Array, required: true },
 		whatDes: { type: Array, required: true },
 		whatPhoto: { data: Buffer, contentType: String },
+
+		content: { type: Array, required: true },
 	},
 	{ timestamps: true }
 );

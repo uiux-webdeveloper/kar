@@ -16,6 +16,7 @@ const createServiceControlller = async (req, res) => {
 		whatHeading,
 		whatSubHeading,
 		whatDes,
+		content,
 	} = req.fields;
 	const { bannerPhoto } = req.files;
 	try {
